@@ -4,244 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
-
-        :root {
-            --gray: #EDEDED;
-            --red-light: #8E0000;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Antonio';
-        }
-
-        .polygons {
-            position: relative;
-        }
-
-        .elipse img {
-            position: absolute;
-            top: 0.5rem;
-            left: 4rem;
-        }
-
-        nav {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-
-        ul {
-            gap: 1.5rem;
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-            font-weight: 900;
-        }
-        ul a {
-            text-decoration: none;
-            color: #4D0000;
-        }
-        ul li {
-            position: relative;
-            cursor: pointer;
-        }
-
-        ul img {
-            position: absolute;
-            top: -1rem;
-            left: 28rem;
-        }
-
-
-        .big_circle {
-            position: absolute;
-            left: 15rem;
-            top: 12rem;
-            border-radius: 100%;
-            background-color: var(--gray);
-            height: 20rem;
-            width: 20rem;
-            box-shadow: rgba(0, 0, 0, 0.267) 0px 4px 4px 0px;
-        }
-
-        .sm_circle1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            left: 20.5rem;
-            top: 8rem;
-            border-radius: 100%;
-            background-color: var(--gray);
-            height: 4rem;
-            width: 4rem;
-        }
-
-        .sm_circle1 img,
-        .sm_circle2 img {
-            width: 35px;
-
-        }
-
-        .sm_circle1 img:hover,
-        .sm_circle2 img:hover {
-            transform: scale(1.05);
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-        }
-
-        .sm_circle1:hover,
-        .sm_circle2:hover {
-            background-color: #e5e5e5;
-        }
-
-        .sm_circle2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            position: absolute;
-            left: 25.5rem;
-            top: 8rem;
-            border-radius: 100%;
-            background-color: var(--gray);
-            height: 4rem;
-            width: 4rem;
-        }
-
-        .elipse2 img {
-            position: absolute;
-            top: 31rem;
-            left: 12rem;
-        }
-
-        .elipse3 img {
-            position: absolute;
-            top: 34rem;
-            left: 14rem;
-            transform: rotate(180deg);
-        }
-
-        .elipse4 {
-            position: absolute;
-            top: 10rem;
-            left: 55rem;
-            z-index: -999;
-        }
-
-        .dots {
-            position: absolute;
-            left: 18.5rem;
-            top: 13.5rem;
-        }
-
-        .vector {
-            position: absolute;
-            top: 16rem;
-            left: 28rem;
-            transform: rotate(-30deg);
-        }
-
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            position: absolute;
-            background-color: rgba(0, 255, 255, 0);
-            height: 90vh;
-            width: 100%;
-        }
-
-        .left {}
-
-        .left img {
-            position: absolute;
-            top: 22rem;
-            left: 29rem;
-            z-index: 9999;
-            transform: rotate(-5deg);
-        }
-
-        .right {}
-
-        .right .h1_container {
-            margin-top: 11rem;
-            margin-left: 14rem;
-            color: var(--red-light);
-            width: 20rem;
-            height: 2rem;
-        }
-
-        .right .p_container {
-            font-weight: 500;
-            letter-spacing: 1px;
-            margin-top: 1rem;
-            margin-left: -2rem;
-            color: var(--red-light);
-            width: 29rem;
-            height: 5rem;
-        }
-
-        .p_container p {
-            font-size: 20px;
-            text-align: right;
-        }
-
-        p span {
-            color: #4D0000;
-            font-weight: 800;
-        }
-
-        nav ul li:nth-of-type(1)::after,nav ul li:nth-of-type(3)::after {
-            content: "";
-            position: absolute;
-            background-color: #4D0000;
-            width: 55px;
-            height: 4px;
-            border-radius: 5px;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            transform: translateY(-3px);
-        }
-        nav ul li:nth-of-type(2)::after{
-            content: "";
-            position: absolute;
-            background-color: #4D0000;
-            width: 35px;
-            height: 4px;
-            border-radius: 5px;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            transform: translateY(-3px);
-        }
-        nav ul li:nth-of-type(3)::after {
-            content: "";
-            position: absolute;
-            background-color: #4D0000;
-            width: 50px;
-            height: 4px;
-            border-radius: 5px;
-            left: 0;
-            opacity: 0;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            transform: translateY(-3px);
-        }
-
-        nav ul li:nth-of-type(1):hover::after, nav ul li:nth-of-type(2):hover::after, nav ul li:nth-of-type(3):hover::after  {
-            opacity: 1;
-            /* Torna o traço visível */
-            transform: translateY(1);
-            /* Move o traço para sua posição original */
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
 <body>
@@ -261,37 +25,101 @@
             </ul>
         </nav>
     </header>
-    <main id="main">
-        <div class="left">
-            <img src="./assets/L.png" alt="" id="letter">
+
+    <main>
+        <div class="mainContainer">
+            <div class="polygons">
+                <div class="elipse"><img src="./assets/elipse1.png" alt=""></div>
+                <div class="sm_circle1">
+                    <a href="https://github.com/yleehsz014" target="_blank"><img src="./assets/icon-github.png"
+                            alt=""></a>
+                </div>
+                <div class="sm_circle2">
+                    <a href="https://instagram.com/yleehsz" target="_blank"><img src="./assets/icon-instagram.png"
+                            alt=""></a>
+                </div>
+                <div class="big_circle"></div>
+                <div class="dots"><img src="./assets/dots.png" alt=""></div>
+                <div class="vector"><img src="/assets/vector1.png" alt=""></div>
+                <div class="elipse2"><img src="./assets/elipse2.png" alt=""></div>
+                <div class="elipse3"><img src="./assets/elipse2.png" alt=""></div>
+                <div class="elipse4"><img src="./assets/elipse3.png" alt=""></div>
+            </div>
+            <div class="grid">
+                <div class="left">
+                    <img src="./assets/L.png" alt="" id="letter">
+                    <div class="projects">
+                        <h1>Projects</h1>
+                        <p><a href="#projectss">NexusGym</a></p>
+                        <p><a href="#projectss">Saber+</a></p>
+                        <p><a href="#projectss">Kidudu</a></p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="h1_container">
+                        <h1>Hey, what's up?!!</h1>
+                    </div>
+                    <div class="p_container">
+                        <p>I’m <span>Lethicia</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="p_lets">
+                        <p>et’s create something amazing together?</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="right">
-            <div class="h1_container">
-                <h1>Hey, what's up?!!</h1>
+        <div class="skillsContainer">
+            <h1>Skills</h1>
+            <div class="sections">
+                <section>
+                    <div class="front">
+                        <img src="./assets/js.png" alt="">
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="back">
+                        <p>JavaScript é uma linguagem de programação usada para criar interatividade em páginas web.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="front">
+                        <img src="./assets/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="back">
+                        <p>HTML é a linguagem de marcação usada para estruturar o conteúdo na web.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="front">
+                        <img src="./assets/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="back">
+                        <p>CSS é usado para estilizar páginas web, controlando cores, layouts e fontes.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="front">
+                        <img src="./assets/php.png" alt="">
+                        <p>PHP</p>
+                    </div>
+                    <div class="back">
+                        <p>PHP é uma linguagem de script usada principalmente no desenvolvimento web.</p>
+                    </div>
+                </section>
             </div>
-            <div class="p_container">
-                <p>I’m <span>Lethicia</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </p>
+            <div class="more">
+                <p>and some more...</p>
             </div>
+        </div>
+        <div class="projectsContainer" id="projectss">
+            <h1>Projects</h1>
         </div>
     </main>
-    <div class="polygons">
-        <div class="elipse"><img src="./assets/elipse1.png" alt=""></div>
-        <div class="sm_circle1">
-            <a href="https://github.com/yleehsz014" target="_blank"><img src="./assets/icon-github.png" alt=""></a>
-        </div>
-        <div class="sm_circle2">
-            <a href="https://instagram.com/yleehsz" target="_blank"><img src="./assets/icon-instagram.png" alt=""></a>
-        </div>
-        <div class="big_circle"></div>
-        <div class="dots"><img src="./assets/dots.png" alt=""></div>
-        <div class="vector"><img src="/assets/vector1.png" alt=""></div>
-        <div class="elipse2"><img src="./assets/elipse2.png" alt=""></div>
-        <div class="elipse3"><img src="./assets/elipse2.png" alt=""></div>
-        <div class="elipse4"><img src="./assets/elipse3.png" alt=""></div>
-    </div>
+
 </body>
 
 </html>
