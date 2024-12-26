@@ -429,6 +429,93 @@ section:hover .back {
     font-size: 100px;
     left: 35.5rem;
     top: -2.3rem;
-    opacity: 0.1;
+    opacity: 0.25;
     letter-spacing: 10px;
+}
+
+.sec_projects {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2rem; 
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.sec_projects img {
+    cursor: pointer;
+    flex: 1 1 50%; 
+    max-width: 40%; 
+    min-width: 20rem;
+    height: 10rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.sec_projects img:hover{
+    transition: 0.4s all ease-in-out;
+    transform: scale(1.1);
+}
+.half-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-hf{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6rem;
+    position: absolute;
+    background-color: #EDEDED;
+    border-radius: 15px;
+    height: 10rem;
+    z-index: 9999;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.container-hf div:nth-of-type(1),.container-hf div:nth-of-type(2),.container-hf div:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-hf div:nth-of-type(1) p{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--red-light);
+}
+
+.container-hf div:nth-of-type(2) p{
+    font-size: 18px;
+    text-align: center;
+    width: 12rem;
+    color: var(--red-light);
+    font-weight: 800;
+}
+.container-hf div:nth-of-type(3) {
+  
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #8E0000;
+    width: 100%;
+    height: 15rem;
+}
+.icons{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+footer p{
+    margin-top: 1rem;
+    display: flex;
+    color: white;
+    font-size: 22px;
 }
